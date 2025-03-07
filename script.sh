@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Define the folder name
-FOLDER="Troubleshooting"
+# Define the folder path under /home
+FOLDER="/home/Troubleshooting"
 
 # Check if the folder exists
 if [ -d "$FOLDER" ]; then
@@ -11,7 +11,7 @@ fi
 
 # Create the folder
 mkdir "$FOLDER"
-echo "Folder '$FOLDER' created."
+echo "Folder '$FOLDER' created under /home."
 
 # Change to the folder
 cd "$FOLDER" || { echo "Failed to change directory to $FOLDER"; exit 1; }
